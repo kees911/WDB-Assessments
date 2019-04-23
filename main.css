@@ -1,0 +1,13 @@
+body {
+  background-color: white;
+  }
+
+p {
+  font-family: serif;
+  color: black;
+  font-weight: normal;
+  }
+
+.title {
+  font-weight: bold;
+  }
