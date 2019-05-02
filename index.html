@@ -6,10 +6,10 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <!--scripts-->
-  <script src="scripts.js"></script>
-  <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script src=”https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js""></script>
 
 </head>
 
@@ -18,36 +18,43 @@
   <header>
     <div class = "title-page">
         <!--TITLE PAGE-->
-        <h1>The Giving Tree
-        <br>By Shel Silverstein</h1>
+        <img id ="the-giving-tree" src="./assets/The_Giving_Tree.svg" data-aos="fade-down" data-aos-duration="3000">
+        <br><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 360 53"><style>.st0{fill:transparent;stroke:black;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10}</style><path id="b" class="st0" d="M108.9 16l.6 17.5s8.3-.6 6.6-8.2c0 0-2-4.5-6.5-.5l-.3.2"/><path id="y" class="st0" d="M116.4 38.9s3.7-5.5 4-8.6l4.6-8.4c-1.6.5-4.7 8.4-4.7 8.4l-2.8-9.8"/><path id="s_2_" class="st0" d="M145.3 22.2s.7-4.5-4.5-3.6-3.4 5.3-3.4 5.3l5.8 6.4s2.6 6.6-4.4 5.1c0 0-3.3-1.9-.3-5.3"/><path id="h" class="st0" d="M153.3 38s0-19.5-4.8-10.1l-.8.5c.3-9.5 3-16 3-16l-.8.7-4.2 25.9"/><path id="e_2_" class="st0" d="M157.8 30.4l5.3-2.5s-.3-5.4-3.8-2.9-2.4 9.7 1.3 9.2c0 0 2 .1 2.4-2.4"/><path id="l_1_" class="st0" d="M168.7 11.8s-.8.9-.9 2.4.1 21.3.1 21.3"/><path id="s_1_" class="st0" d="M194.6 16.1s-.6-4.8-4.8-3.6-5.7 5.3-4.5 8.6 4.5 6.2 4.5 6.2 2.4 2.5.2 6.4-10.8-1.1-5.3-4.8"/><path id="i_3_" class="st0" d="M196.3 26.2s-1-.3-1.2 1.3-.7 8.3-.7 8.3"/><path id="i_2_" class="st0" d="M196.3 20.9v1.2"/><path id="l" class="st0" d="M203.8 8.6s-1-.5-1.5 4.3-3 23.8-3.3 23.8"/><path id="v" class="st0" d="M204.8 24.9s-.7.4-.8 1.3.2 14.1.2 14.1 3.6-4 7.8-13.8c0 0 .4-.5.7-.4"/><path id="e_1_" class="st0" d="M217.9 34.1s-3.4 1.7-4.4-1.5.9-9.1 3.9-9.3 2.3 3.7 2.3 3.7l-6.3 3.3"/><path id="r" class="st0" d="M227.8 26.5s-.5-6.2-5 1.3c.1-2 .2-3.6.2-3.8 0-.5-.5-.7-.5-.7l-.2 14s.3-5.6.5-9.5"/><path id="s" class="st0" d="M228.2 30.2s-1.3.3-1.3 1.6c-.1 1.3.7 3.4 3.5 3.2 2.9-.2 3.9-3.2 3.4-4.4s-3.1-8.6-3.1-8.6-2.6-6 3.2-7.2c0 0 4.2-1.5 3.2 4.1"/><path id="t" class="st0" d="M234.9 25l9.6.2c-1.2 2.2-6.4-1.7-5-6.5l-2.2 14.8s-1.1 3.4 2.6 3.6"/><path id="e" class="st0" d="M243.6 28.6s5.8-.8 6.3-1.1c0 0 .7-4.8-2.8-4s-4.3 5.1-3.3 9.2c0 0 2.1 4.6 4.9 0"/><path id="i_1_" class="st0" d="M253.3 27.1s-.9.2-1 .8-1 7.5-1.9 9.8"/><path id="i" class="st0" d="M253.2 21.3s-.3.2 0 .4c.3.1.4-.4 0-.4z"/><path id="n" class="st0" d="M260.1 37.2s1.6-10.6 1.7-11.3c.2-.8.9-5.6-5.7.6v-4s0 7.7-1.3 12.7"/></svg>
     </div>
   </header>
-  
+
   <div class = "intro">
 
   <!--Page 1-->
   Once there was a tree...
 
   <!--Page 2-->
-  and she loved a little boy.
+  <br>and she loved a little boy.
 
   </div>
 
   <div class = "young-boy">
 
+    <div class= "flex-container">
+
+    <div class = "flex-one">
   <!--Page 3-->
   And every day
-  the boy
-  would come
+  <br>the boy
+  <br>would come
+    </div>
+    <div class = "flex-one" data-aos="fade-left">
+      <img src="./assets/boy-pg-4.svg" width="400">
+    </div>
+  </div>
 
   <!--Page 4-->
-  and he would
-  gather her leaves
+  <br>and he would
+  <br>gather her leaves
 
   <!--Page 5-->
-  And make them into crowns
-  and play king of the forest
-
+  <br>And make them into crowns
+  <br>and play king of the forest
   </div>
 
   <div class = "young-boy-eat">
@@ -55,21 +62,21 @@
   He would climb up her trunk
 
   <!--Page 7-->
-  and swing from her branches
+  <br>and swing from her branches
 
   <!--Page 8-->
-  and eat apples.
+  <br>and eat apples.
   </div>
 
   <div class = "young-boy-play">
   <!--Page 9-->
   And they would play
-  hide and go seek
+  <br>hide and go seek
 
   <!--Page 10-->
-  And when he was tired,
-  he would sleep
-  in her shade.
+  <br>And when he was tired,
+  <br>he would sleep
+  <br>in her shade.
 
   </div>
 
@@ -79,11 +86,12 @@
   And the boy loved the tree...
 
   <!--Page 12-->
-  ...very much
-  And the tree was happy.
+  <br>very much
+  <br>And the tree was happy.
 
   </div>
 
+  <div class = "young-boy-grows">
   <!--Page 13-->
   But time went by.
 
@@ -92,11 +100,21 @@
 
   <!--Page 15-->
   And the tree was often alone.
+  </div>
 
+  <div class = "apple-sales">
   <!--Page 16-->
   Then one day the boy
   came to the tree
   and the tree said:
+
+  <div class= "flex-container">
+
+  <div class = "flex-one">
+    <img src="./assets/tree.jpg">
+  </div>
+
+  <div class = "page-16-tree flex-two">
   "Come, Boy, come and
   climb up my trunk
   and swing from
@@ -104,7 +122,12 @@
   and eat apples and
   play in my shade
   and be happy."
+  </div>
+  </div>
 
+  <div class= "flex-container">
+
+  <div class = "page-17-boy flex-two">
   <!--Page 17-->
   "I am too big to
   climb and play,"
@@ -114,8 +137,21 @@
   I want some money.
   Can you give me
   some money?"
+  </div>
+
+  <div class="flex-one">
+    <img src="./assets/boy.png">
+  </div>
+  </div>
 
   <!--Page 18-->
+  <div class= "flex-container">
+
+  <div class = "flex-one">
+    <img src="./assets/tree.jpg">
+  </div>
+
+  <div class = "page-16-tree flex-two">
   "I'm sorry,"
   said the tree,
   "but I have no money.
@@ -126,6 +162,8 @@
   Then you will
   have money
   and you will be happy."
+  </div>
+  </div>
 
   <!--Page 19-->
   And so the boy climbed up the tree
@@ -133,11 +171,15 @@
   and carried them away.
 
   And the tree was happy...
+  </div>
 
+  </div>
   <!--Page 20-->
   But the boy stayed away for a long time...
   and the tree was sad.
+  </div>
 
+  <div>
   And then one day
   the boy came back
   and the tree shook
@@ -146,6 +188,7 @@
   my trunk and swing
   from my branches
   and be happy."
+  </div>
 
   <!--Page 21-->
   "I am too busy to climb trees,"
@@ -193,34 +236,58 @@
 
   and made a boat and sailed away.
 
+ <div class="page-27" align="center">
+   <img src="./assets/treestump.svg" width ="400">
   <!--Page 27-->
-  And the tree was happy... but not really
+  <br>And the tree was happy... but not really
+</div>
 
+
+ <div class="page-28">
   <!--Page 28-->
-  And afte a long time
+  And after a long time
   the boy came back again.
 
-  "I am sorry, Boy," said the tree
-  "but i have nothing left to give you, my apples are gone."
-  "My teeth are too weak for apples," said the boy.
+  <div class="dialogue-left" data-aos="fade-right" data-aos-duration="1500">
+    "I am sorry, Boy," said the tree,
+    <br>"but I have nothing left to give you,
+    <br>my apples are gone."
+  </div>
+  <div class="dialogue-right" data-aos="fade-left" data-aos-duration="1500">
+    "My teeth are too weak for apples,"
+    <br>said the boy.
+  </div>
+  <div class="dialogue-left" data-aos="fade-right" data-aos-duration="1500">
+    "My branches are gone," said the tree.
+    <br>"You cannot swing on them."
+  </div>
+  <div class="dialogue-right" data-aos="fade-left" data-aos-duration="1500">
+    "I am too old to swing on branches,"
+    <br>said the boy.
+  </div>
+  <div class="dialogue-left" data-aos="fade-right" data-aos-duration="1500">
+    "My trunk is gone," said the tree.
+    <br>"You cannot climb."
+  </div>
+  <div class="dialogue-right" data-aos="fade-left" data-aos-duration="1500">
+    "I am too tired to climb,"
+    <br>said the boy.
+  </div>
+</div>
 
-  "My branches are gone," said the tree.
-  "You cannot swing on them."
-  "I am too old to swing
-  on branches," said the boy.
-
-  "My trunk is gone," said the tree.
-  "You cannot climb."
-  "I am too tired to climb,"
-  said the boy.
-
-  <!--Page 29-->
+ <div class="page-29" align ="center">
+<!--Page 29-->
   "I am sorry," sighed the tree.
-  "I wish that I could
-  give you something...
-  But I have nothing left.
-  I am just an old stump.
+</div>
+<div>
+  <br>"I wish that I could give you something...
+  <br>But I have nothing left.
+  <br>I am just an old stump.
+</div>
+
+<div class="page-29b" align ="center">
   I am sorry..."
+</div>
 
   "I don't need very much now,"
   said the boy,
@@ -240,8 +307,16 @@
   <!--Page 30-->
   And the tree was happy...
 
+<div class="the-end" align="center">
   <!--Ending Page-->
-  The End
+  <img src="./assets/ending-tile.svg" width="400px">
+  <br>The End
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
