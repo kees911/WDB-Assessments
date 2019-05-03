@@ -14,6 +14,7 @@ div {
   padding: 20px;
 }
 
+/*title div stuff*/
 .title-page {
   font-family: 'Shadows Into Light', cursive;
   color: white;
@@ -27,30 +28,37 @@ div {
   animation: float 3s infinite;
 }
 
-#b { stroke-dasharray: 38px; stroke-dashoffset: -38px;}
-#y { stroke-dasharray: 40px; stroke-dashoffset: -40px;}
+/*By Shel Silverstein*/
+#b { stroke-dasharray: 38px; stroke-dashoffset: -38px; animation: hwanimation 0.5s linear 0.4s forwards;}
+#y { stroke-dasharray: 40px; stroke-dashoffset: -40px; animation: hwanimation 0.5s linear 0.8s forwards;}
 
-#s_2_ { stroke-dasharray: 39px; stroke-dashoffset: -39px;}
-#h { stroke-dasharray: 62px; stroke-dashoffset: -62px;}
-#e_2_ { stroke-dasharray: 28px; stroke-dashoffset: -28px;}
-#l_1_ { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
+#s_2_ { stroke-dasharray: 39px; stroke-dashoffset: -39px; animation: hwanimation 0.5s linear 1.2s forwards;}
+#h { stroke-dasharray: 62px; stroke-dashoffset: -62px; animation: hwanimation 0.5s linear 1.6s forwards;}
+#e_2_ { stroke-dasharray: 28px; stroke-dashoffset: -28px; animation: hwanimation 0.5s linear 2.0s forwards;}
+#l_1_ { stroke-dasharray: 24px; stroke-dashoffset: -24px; animation: hwanimation 0.5s linear 2.4s forwards;}
 
-#s_1_ { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#i_3_ { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#i_2_ { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#l { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#v { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#e_1_ { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#r { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
+#s_1_ { stroke-dasharray: 46px; stroke-dashoffset: -46px; animation: hwanimation 0.5s linear 2.8s forwards;}
+#i_3_ { stroke-dasharray: 11px; stroke-dashoffset: -11px; animation: hwanimation 0.5s linear 3.2s forwards;}
+#i_2_ { stroke-dasharray: 2px; stroke-dashoffset: -2px; animation: hwanimation 0.5s linear 3.3s forwards;}
+#l { stroke-dasharray: 30px; stroke-dashoffset: -30px; animation: hwanimation 0.5s linear 3.7s forwards;}
+#v { stroke-dasharray: 33px; stroke-dashoffset: -33px; animation: hwanimation 0.5s linear 4.1s forwards;}
+#e_1_ { stroke-dasharray: 29px; stroke-dashoffset: -29px; animation: hwanimation 0.5s linear 4.5s forwards;}
+#r { stroke-dasharray: 37px; stroke-dashoffset: -37px; animation: hwanimation 0.5s linear 4.9s forwards;}
 
-#s { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#t { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#e { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#i_1_ { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#i { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
-#n { stroke-dasharray: 0px; stroke-dashoffset: 0px;}
+#s { stroke-dasharray: 39px; stroke-dashoffset: -39px; animation: hwanimation 0.5s linear 5.4s forwards;}
+#t { stroke-dasharray: 41px; stroke-dashoffset: -41px; animation: hwanimation 0.5s linear 5.8s forwards;}
+#e { stroke-dasharray: 30px; stroke-dashoffset: -30px; animation: hwanimation 0.5s linear 6.2s forwards;}
+#i_1_ { stroke-dasharray: 12px; stroke-dashoffset: -12px; animation: hwanimation 0.5s linear 6.6s forwards;}
+#i { stroke-dasharray: 2px; stroke-dashoffset: -2px; animation: hwanimation 0.5s linear 6.7s forwards;}
+#n { stroke-dasharray: 38px; stroke-dashoffset: -38px; animation: hwanimation 0.5s linear 7.1s forwards;}
 
+@keyframes hwanimation {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
 
+/*page 1*/
 .intro {
   height: 300px;
 }
