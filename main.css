@@ -3,6 +3,7 @@ body {
   transition: 0.3s all;
   font-family: 'Amiri', serif;
   font-size: 24px;
+  text-align:center;
   color: #282828;
   cursor:url('./assets/leaf-cursor.gif'), none;
 }
@@ -24,6 +25,13 @@ div.flex-container  {
 }
 
 /*title div stuff*/
+#top-left {
+  margin-left: 0px;
+  margin-top: 0px;
+  position: relative;
+  width: 100vw;
+}
+
 .title-page {
   font-family: 'Shadows Into Light', cursive;
   color: white;
@@ -31,6 +39,11 @@ div.flex-container  {
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
   text-align: center;
+  position: absolute;
+  top: 3rem;
+  right: 0px;
+  left: 0px;
+  align-items: center;
 }
 
 .title-page img {
@@ -86,14 +99,11 @@ div.flex-container  {
 }
 
 .tree {
-  color: white;
-  font-family: "Josefin-slab", serif;
-  font-style: italic;
+  font-family: "Caveat", cursive;
 }
 
 .boy {
-  color: black;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 .young-boy {
@@ -174,13 +184,11 @@ div.flex-container {
 }
 
 .flex-one {
-  display: flex;
   flex-grow: 1;
   border: 1px solid red;
 }
 
 .flex-two {
-  display: flex;
   flex-grow: 2;
   border: 1px solid red;
 }
@@ -192,6 +200,7 @@ div.flex-container {
 
 .page-17-boy {
   height: auto;
+  text-align:left;
 }
 
 .page-27 {
@@ -221,6 +230,13 @@ div.flex-container {
   height: auto;
   align-content: center;
   }
+.dialog-left {
+    text-align: left;
+}
+
+.dialog-right {
+    text-align: right;
+}
 
 .page-29 {
   height: 200px;
@@ -236,7 +252,9 @@ div.flex-container {
   margin-top: 75px;
   }
 
-
+.half-opacity {
+  opacity: 0.5;
+}
 
 .tintScreen {
     position:fixed;
@@ -250,6 +268,13 @@ div.flex-container {
     width: 100%;
     height: 100%;
     background:rgba(255,255,255,0.5);
+}
+
+#ending {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .the-end {
