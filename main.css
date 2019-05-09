@@ -2,7 +2,9 @@ body {
   background-image: linear-gradient(#9BCE83, #FEFDF4);
   transition: 0.3s all;
   font-family: 'Amiri', serif;
-  font-size: 36px;
+  font-size: 24px;
+  text-align:center;
+  color: #282828;
   cursor:url('./assets/leaf-cursor.gif'), none;
 }
 
@@ -14,19 +16,52 @@ div {
   padding: 20px;
 }
 
+div.flex-container  {
+  display: flex;
+}
+
+.flex-container  {
+  display: flex;
+}
+
 /*title div stuff*/
+#top-left {
+  margin-left: 0px;
+  margin-top: 0px;
+  position: relative;
+  width: 100vw;
+}
+
 .title-page {
   font-family: 'Shadows Into Light', cursive;
   color: white;
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 0.1px;
   -webkit-text-stroke-color: black;
-  text-align: right;
+  text-align: center;
+  position: absolute;
+  top: 3rem;
+  right: 0px;
+  left: 0px;
+  align-items: center;
 }
 
-#the-giving-tree {
+.title-page img {
   animation: float 3s infinite;
+  height: 75vh;
 }
+
+@keyframes float {
+  	0% {
+  		transform: translatey(0px);
+  	}
+  	50% {
+  		transform: translatey(-10px);
+  	}
+  	100% {
+  		transform: translatey(0px);
+  	}
+  }
 
 /*By Shel Silverstein*/
 #b { stroke-dasharray: 38px; stroke-dashoffset: -38px; animation: hwanimation 0.5s linear 0.4s forwards;}
@@ -45,7 +80,7 @@ div {
 #e_1_ { stroke-dasharray: 29px; stroke-dashoffset: -29px; animation: hwanimation 0.5s linear 4.5s forwards;}
 #r { stroke-dasharray: 37px; stroke-dashoffset: -37px; animation: hwanimation 0.5s linear 4.9s forwards;}
 
-#s { stroke-dasharray: 39px; stroke-dashoffset: -39px; animation: hwanimation 0.5s linear 5.4s forwards;}
+#s { stroke-dasharray: 40px; stroke-dashoffset: -40px; animation: hwanimation 0.5s linear 5.4s forwards;}
 #t { stroke-dasharray: 41px; stroke-dashoffset: -41px; animation: hwanimation 0.5s linear 5.8s forwards;}
 #e { stroke-dasharray: 30px; stroke-dashoffset: -30px; animation: hwanimation 0.5s linear 6.2s forwards;}
 #i_1_ { stroke-dasharray: 12px; stroke-dashoffset: -12px; animation: hwanimation 0.5s linear 6.6s forwards;}
@@ -60,60 +95,130 @@ div {
 
 /*page 1*/
 .intro {
-  height: 300px;
+  height: auto;
+}
+
+.tree {
+  font-family: "Caveat", cursive;
+}
+
+.boy {
+  font-family: 'Nanum Pen Script', cursive;
 }
 
 .young-boy {
-  height: 1000px;
 }
 
 .young-boy-eat {
-  height: 300px;
+  height: auto;
 }
 
 .young-boy-play {
-  height: 300px;
+  height: auto;
 }
 
 .young-boy-end {
-  height: 300px;
+  height: auto;
 }
 
 .young-boy-grows {
-  height: 300px;
-  background-color: gray;
+  height: auto;
+  /*background-color: gray;*/
+  position: relative;
+  width: 100%; /* for IE 6 */
 }
 
-.apple-sales {
+marquee {
+  /* position: absolute; */
+  font-family:sans-serif;
+  font-size: 18px;
+  z-index:10;
+  /* Adding background color and border for debugging */
+  /*background-color: rgba(255,0,0,0.2);*/
+  /*border: 1px solid red;*/
+  /* animation: fallingLeaves 10s infinite; */
+  /* To compensate for parent div having 20px padding */
+  /* Try changing "-12px" and see how the leaves come closer together */
+  margin: -12px -20px;
+  /* Adding padding to make sure leaves don't get cropped off */
+  padding: 2rem 0 3rem 0;
+}
+marquee img {
+  animation: fallingLeaves 10s infinite;
+}
+.box-of-leaves {
+  /*border: 1px solid yellow;*/
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
 
+@keyframes fallingLeaves {
+0% {
+opacity: 1;
+-webkit-transform: translate(0, 0px) rotateZ(0deg);
+}
+33% {
+opacity: 1;
+-webkit-transform: translate(10x, 40px) rotateZ(120deg);
+}
+66% {
+opacity: 1;
+-webkit-transform: translate(5px, 30px) rotateZ(240deg);
+}
+100% {
+opacity: 1;
+-webkit-transform: translate(0, 0px) rotateZ(360deg);
+}
 }
 
 .flex-container {
   display: flex;
+  flex-direction: column;
+}
+
+div.flex-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-one {
   flex-grow: 1;
+  border: 1px solid red;
 }
 
 .flex-two {
   flex-grow: 2;
+  border: 1px solid red;
 }
 
 .page-16-tree {
-  height: 300px;
+  height: auto;
   text-align: right;
 }
 
 .page-17-boy {
-  height: 300px;
+  height: auto;
+  text-align:left;
 }
 
 .page-27 {
-  height: 500px;
+  display:flex;
+  flex-direction: column;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+}
+
+/*.page-27 img {
+  height: auto;
   align-content: center;
   animation: pulse 2s infinite;
-  }
+  -webkit-animation: pulse 2s infinite;
+}*/
 
 @keyframes pulse {
 0% {opacity: 0.25;}
@@ -121,14 +226,19 @@ div {
 100% {opacity:0.25;}
 }
 
-.dialogue-left {
-  text-align: left;
-  padding: 0;
+/*put align left and align right back*/
+
+.page-28 {
+  /* background-color: #000000; */
+  height: auto;
+  align-content: center;
+  }
+.dialog-left {
+    text-align: left;
 }
 
-.dialogue-right {
-  text-align: right;
-  padding: 0;
+.dialog-right {
+    text-align: right;
 }
 
 .page-29 {
@@ -139,23 +249,15 @@ div {
   }
 
 .page-29b {
-  height: 200px;
+  height: 400px;
   align-content: center;
   animation: pulse 2s infinite, float 3s infinite;
   margin-top: 75px;
   }
 
-@keyframes float {
-  	0% {
-  		transform: translatey(0px);
-  	}
-  	50% {
-  		transform: translatey(-10px);
-  	}
-  	100% {
-  		transform: translatey(0px);
-  	}
-  }
+.half-opacity {
+  opacity: 0.5;
+}
 
 .tintScreen {
     position:fixed;
@@ -171,6 +273,13 @@ div {
     background:rgba(255,255,255,0.5);
 }
 
+#ending {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .the-end {
-  height: 500px;
+  height: auto;
 }
