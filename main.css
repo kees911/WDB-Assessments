@@ -147,7 +147,7 @@ marquee img {
   animation: fallingLeaves 10s infinite;
 }
 .box-of-leaves {
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   position: absolute;
   top:0;
   left:0;
@@ -204,18 +204,21 @@ div.flex-container {
 }
 
 .page-27 {
-  height: auto;
-  align-content: center;
+  display:flex;
+  flex-direction: column;
+  height: 150vh;
+  justify-content: center;
+  align-items: center;
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
 }
 
-.page-27 img {
+/*.page-27 img {
   height: auto;
   align-content: center;
   animation: pulse 2s infinite;
   -webkit-animation: pulse 2s infinite;
-}
+}*/
 
 @keyframes pulse {
 0% {opacity: 0.25;}
@@ -246,7 +249,7 @@ div.flex-container {
   }
 
 .page-29b {
-  height: 200px;
+  height: 400px;
   align-content: center;
   animation: pulse 2s infinite, float 3s infinite;
   margin-top: 75px;
