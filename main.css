@@ -4,7 +4,7 @@ body {
   font-family: 'Amiri', serif;
   font-size: 24px;
   text-align:center;
-  color: #282828;
+  color: #433333;
   cursor:url('./assets/leaf-cursor.gif'), none;
 }
 
@@ -100,13 +100,40 @@ div.flex-container  {
 
 .tree {
   font-family: "Caveat", cursive;
+  color: SaddleBrown;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .boy {
   font-family: 'Nanum Pen Script', cursive;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .young-boy {
+  position:relative;
+  height: 15rem;
+  /* border: solid red 1px; */
+}
+
+.leaf-crown-one {
+  position:absolute;
+  left:10rem;
+  bottom:0;
+  height: 10rem;
+}
+
+.page-3 {
+  position:absolute;
+  left: 50vh;
+}
+
+.trunk-one {
+  position:absolute;
+  right:0;
+  bottom: 0;
+  height: 20rem;
 }
 
 .young-boy-eat {
@@ -127,6 +154,8 @@ div.flex-container  {
   position: relative;
   width: 100%; /* for IE 6 */
 }
+
+
 
 marquee {
   /* position: absolute; */
@@ -185,12 +214,12 @@ div.flex-container {
 
 .flex-one {
   flex-grow: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .flex-two {
   flex-grow: 2;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .page-16-tree {
@@ -201,6 +230,40 @@ div.flex-container {
 .page-17-boy {
   height: auto;
   text-align:left;
+}
+
+#page-21 {
+  position:relative;
+  padding: 0;
+}
+
+#page-21-absolute {
+  position:absolute;
+  left: 35%;
+  top:50vh;
+}
+
+#boat {
+  margin-right: 0px;
+  position:relative;
+  /* border: solid blue 1px; */
+}
+
+#cut-tree {
+  position:absolute;
+  right: -5%;
+  /* border: solid yellow 1px; */
+}
+
+.boat-page {
+  position:absolute;
+  top: 220%;
+  left: 0;
+  /* border: solid orange 1px; */
+}
+
+#cut-down-tree {
+  height: 30rem;
 }
 
 .page-27 {
