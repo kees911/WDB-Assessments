@@ -1,0 +1,338 @@
+body {background-color: black;}
+
+body#landing-bg {
+ background-image: url(./assets/landing-image.jpg);
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-color: black;
+}
+
+/* A link that has not been visited */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* A link that has been visited */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* A link that is hovered on */
+a:hover {
+    color: silver;
+    text-decoration: none;
+}
+
+/* A link that is selected */
+a:active {
+    color: gray;
+    text-decoration: underline;
+}
+
+p {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+}
+
+.shop-item {
+  text-align:center;
+}
+
+h1 {
+  font-family: "Bodoni 72";
+  font-weight: normal;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Bodoni 72";
+  font-weight: normal;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+}
+
+#slogan {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+h3 {
+  font-family: "Bodoni 72";
+  font-weight: normal;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+
+h3#recent-articles {
+  padding-left: 20px;
+  text-align:left;
+}
+
+h3.subtitles {
+  text-align:left;
+}
+
+h3.tab {
+  font-family: "Bodoni 72";
+  font-weight: normal;
+  font-size: 36px;
+  color: black;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+h5 {
+  font-family: "Bodoni 72";
+  font-weight: normal;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+}
+
+.navigation li {
+  display: inline;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 36px;
+  color: white;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+ul.recipe  {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recipe li {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: white;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.two-thirds {
+  flex: 2;
+  padding: 20px;
+}
+
+.one-third {
+  flex: 1;
+  padding: 20px;
+}
+
+.four-fifths {
+  flex: 4;
+  padding: 20px;
+}
+
+.one-half {
+  flex: 1;
+}
+
+#site-name {
+  font-family: "Bodoni 72";
+  font-weight: normal;
+  font-size: 84px;
+  color: white;
+  text-align: Left;
+  display:inline-block;
+  margin-right:100px;
+}
+
+#landing-page {
+  padding-top: 10%;
+}
+
+#landing-enter-button {
+  margin: auto;
+  height: 80px;
+  width: 280px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+
+#landing-enter-button:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* A link that has been visited */
+#landing-enter-button:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* A link that is hovered on */
+#landing-enter-button:hover {
+    color: silver;
+    text-decoration: none;
+}
+
+/* A link that is selected */
+#landing-enter-button:active {
+    color: gray;
+    text-decoration: underline;
+}
+
+header p,header nav, header div {
+  display:inline-block;
+  vertical-align: middle;
+ }
+
+ * {box-sizing:border-box}
+
+ /* Slideshow container */
+ .slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   margin-top: -22px;
+   padding: 16px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+ }
+
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-family: "Gill Sans", sans-serif;
+   font-weight: lighter;
+   font-size: 18px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+
+ .active, .dot:hover {
+   background-color: #717171;
+ }
+
+ /* Fading animation */
+ .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+
+ @-webkit-keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+ @keyframes fade {
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+
+ #frontpageline {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   padding-left: 500px;
+   padding-right: 500px;
+ }
+
+.grid-container {
+  display: inline-grid;
+  grid-row-gap: 50px;
+  grid-column-gap: 5px;
+  grid-template-columns: 33% 33% 33%;
+ }
+
+
+.grid-item {
+  background-color: black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+strong {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  color: white;
+  align: center;
+  font-weight: normal;
+}
